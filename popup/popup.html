@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save This Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: white;
+        padding: 20px;
+        width: 250px;
+        margin: 0;
+      }
+      button {
+        background-color: #6200ea;
+        color: white;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #3700b3;
+      }
+      .progress-container {
+        width: 100%;
+        background-color: #333;
+        border-radius: 5px;
+        margin-top: 10px;
+        height: 20px;
+        overflow: hidden;
+      }
+      .progress-bar {
+        height: 100%;
+        background-color: #6200ea;
+        width: 0%;
+        transition: width 0.4s;
+      }
+      .status {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="downloadBtn">Download Page</button>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="status" id="statusText">Ready to download</div>
+    <script src="popup.js" defer></script>
+  </body>
+</html>
